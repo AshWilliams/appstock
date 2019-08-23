@@ -47,7 +47,7 @@ namespace AppStock.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "idPlatillo,nombre,descripcion,fechaCreacion")] Platillos platillos)
+        public async Task<ActionResult> Create([Bind(Include = "idPlatillo,nombre,descripcion,Precio,fechaCreacion")] Platillos platillos)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace AppStock.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "idPlatillo,nombre,descripcion,fechaCreacion")] Platillos platillos)
+        public async Task<ActionResult> Edit([Bind(Include = "idPlatillo,nombre,descripcion,Precio,fechaCreacion")] Platillos platillos)
         {
             if (ModelState.IsValid)
             {

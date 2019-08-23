@@ -22,5 +22,6 @@ namespace AppStock
         public string descripcion { get; set; }
         [Display(Name = "Fecha de Creación")]
         public System.DateTime fechaCreacion { get; set; }
+        public int Precio { get; set; }
     }
 }
